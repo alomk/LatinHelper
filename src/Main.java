@@ -6,7 +6,9 @@ public class Main {
 		String input = "";
 		String address = "http://archives.nd.edu/cgi-bin/wordz.pl?keyword=";
 		Definitions definitions = new Definitions();
+		definitions.getDefinitions(address);
 		while(true) {
+			address = "http://archives.nd.edu/cgi-bin/wordz.pl?keyword=";
 			System.out.print("Enter words (\"exit\" to quit program): ");
 			input = scan.nextLine();
 			if (input.equals("exit")) {
